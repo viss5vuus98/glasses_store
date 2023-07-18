@@ -23,9 +23,9 @@ npm run dev
 ## 專案架構
 
 ```
-|`src`
-  |`assets` 靜態檔案, Image
-  |`pages`  頁面Html
-  |`styles` .scss檔案
-| `index.html` 頁面html
+| src
+  | assets 靜態檔案, Image
+  | pages  頁面Html
+  | styles .scss檔案
+| index.html 頁面html
 ```
