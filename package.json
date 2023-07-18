@@ -1,0 +1,20 @@
+{
+  "name": "vite_scss",
+  "version": "1.0.0",
+  "description": "vite_scss develope environmental",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "vite build && gh-pages -d dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gh-pages": "^5.0.0",
+    "sass": "^1.63.6",
+    "vite": "^4.4.4"
+  }
+}

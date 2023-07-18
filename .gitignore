@@ -1,0 +1,14 @@
+# bundle files
+dist
+# Folder view configuration files
+.DS_Store
+
+# Application specific files
+node_modules
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map
+
+#vscode 
+.vscode
