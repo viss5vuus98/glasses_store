@@ -1,11 +1,10 @@
-# Personal_Page 個人頁面
-
-https://viss5vuus98.github.io/Personal_Page/
+# Vite SCSS 環境
 
 ## 專案設置
 
 - 此專案透過`vite`啟動。
 - 使用`SCSS`預處理器
+- 部署至GitHub Pages
 
 ####  在本機啟動專案
 ```
@@ -23,6 +22,8 @@ npm run dev
 ```
 ## 專案架構
 
-- `assets` 靜態檔案, Image
-- `src` .scss檔案, .js檔案
-- `index.html` 頁面html
+|`src`
+  |`assets` 靜態檔案, Image
+  |`pages`  頁面Html
+  |`styles` .scss檔案
+| `index.html` 頁面html
