@@ -1,0 +1,16 @@
+@import './grid.scss';
+
+body,
+a {
+  font-family: ''Noto Sans TC'', 'Roboto', cursive;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 12px;
+  @include b992 {
+    padding: 0 36px;
+  }
+}

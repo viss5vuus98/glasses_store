@@ -1,0 +1,48 @@
+@import '../basic/_grid.scss';
+@import '../basic/_variable.scss';
+
+.navbar {
+  background-color: $main_color;
+  & .container {
+    padding: 12px 16px;
+    @include b767 {
+      padding: 12px 0 0 0;
+    }
+  }
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include b767 {
+    flex-direction: column;
+    align-items: start;
+  }
+}
+.logo {
+  max-width: 80px;
+  @include b767 {
+    margin:0 0 16px 12px;
+  }
+}
+.nav_items {
+  display: flex;
+  justify-content: end;
+  gap: 64px;
+  @include b767 {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 0;
+  }
+  & a {
+    font-size: 20px;
+    color: $font_light;
+  }
+  & li {
+    @include b767 {
+      width: 50%;
+      text-align: center;
+      border: 1px solid $font_light;
+    }
+  }
+}

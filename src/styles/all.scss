@@ -1,2 +1,8 @@
 @import './basic/_reset.scss';
-@import './basic/_basic.scss';
+@import './basic/_common.scss';
+
+//layout
+@import './layout/navbar.scss';
+
+//pages
+@import './home_1.scss';
