@@ -1,7 +1,7 @@
 
 export default ({
   base: '/glasses_store/', //設置Git Pages的根目錄
-  // assetsDir: 'assets', //設置靜態資源目錄
+  //assetsDir: '/assets/images', //設置靜態資源目錄
   // resolve: {
   //   alias: {
   //         '/images': 'src/assets/images',

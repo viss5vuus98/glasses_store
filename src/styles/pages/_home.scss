@@ -1,8 +1,8 @@
 //header
 header {
-  background: url('src/assets/images/home-header.png') no-repeat top center / cover;
+  background: url('/assets/images/home-header.png') no-repeat top center / cover;
   @include b768 {
-    background-img: url('src/assets/images/home-header-sm.png');
+    background-img: url('/assets/images/home-header-sm.png');
   }
 }
 .h_title_content {
@@ -101,7 +101,7 @@ header {
 //banner_3
 .banner_3 {
   @extend %banner_content;
-  background: url('src/assets/images/index-bg.png') no-repeat center center / cover;
+  background: url('/assets/images/index-bg.png') no-repeat center center / cover;
   .section_title {
     margin-bottom: 48px;
     color: $font_white;
