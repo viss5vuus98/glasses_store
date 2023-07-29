@@ -10,7 +10,7 @@ export default {
   // 設定伺服器選項
   server: {
     port: 3000, //設置服務器啟動端口號
-    open: '@/pages/index.html', //設置服務器啟動時是否自動打開瀏覽器
+    open: '/index.html', //設置服務器啟動時是否自動打開瀏覽器
   },
   // 設定構建選項
   build: {
