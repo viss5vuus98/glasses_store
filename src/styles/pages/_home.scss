@@ -1,6 +1,9 @@
 //header
 header {
   background: url('src/assets/images/home-header.png') no-repeat top center / cover;
+  @include b768 {
+    background-img: url('src/assets/images/home-header-sm.png');
+  }
 }
 .h_title_content {
   margin-left: auto;
