@@ -1,0 +1,51 @@
+//navbar
+.navbar {
+  background-color: $primary;
+  @include b768 {
+    & .container {
+      max-width: 768px;
+      padding: 0;
+    }
+  }
+}
+.nav {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  @include b992 {
+    padding: 12px 24px;
+  }
+  @include b768 {
+    flex-direction: column;
+    align-items: start;
+    padding: 12px 0 0 0;
+  }
+}
+.logo {
+  width: 8.333%;
+  @include b768 {
+    width: 25%;
+    margin: 0 0 16px 12px;
+  }
+}
+.nav_items {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+  color: $font_white;
+  @include b768 {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 0;
+    border: 1px solid #000;
+    font-size: 16px;
+    & li{
+      width: 50%;
+      text-align: center;
+      border: 1px solid $font_white;
+      border-bottom: 0;
+      padding: 12px;
+    }
+  }
+}

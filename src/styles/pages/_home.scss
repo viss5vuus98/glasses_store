@@ -1,0 +1,259 @@
+//header
+header {
+  background: url('src/assets/images/home-header.png') no-repeat top center / cover;
+}
+.h_title_content {
+  margin-left: auto;
+  padding: 296px 12px;
+  text-align: end;
+  color: $font_brown;
+  h1 {
+    font-weight: 700;
+    margin-bottom: 10px;
+    @include b768 {
+      margin-bottom: 14px;
+    }
+  }
+}
+.h_link {
+  a {
+    @include primary_btn;
+  }
+}
+.section_title {
+  margin: 0 auto;
+}
+
+//banner_1
+.banner_1 {
+  @extend %banner_content;
+  background-color: $bg_light;
+}
+.b_cards {
+  margin-top: 32px;
+  display: flex;
+  justify-content: space-between;
+  @include b992 {
+    flex-wrap: wrap;
+  }
+}
+.b_card {
+  width: 24%;
+  text-align: center;
+  .card_title {
+    margin-bottom: 8px;
+    font-size: 24px;
+    color: $font_brown;
+  }
+  p {
+    text-align: start;
+  }
+  img {
+    width: 83px;
+  }
+  @include b992 {
+    width: 48%;
+  }
+  @include b768 {
+    width: 100%;
+    margin-bottom: 32px;
+  }
+}
+
+//banner_2
+.banner_2 {
+  @extend %banner_content;
+  .section_title {
+    margin-bottom: 48px;
+  }
+}
+.b2_cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  @include b992 {
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+}
+.b2_card {
+  h3 {
+    margin-top: 8px;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 900;
+    color: $primary;
+  }
+  @media screen and (max-width: 1100px) {
+    h3 {
+      font-size: 44px;
+    }
+  };
+  @include b992 {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+}
+
+//banner_3
+.banner_3 {
+  @extend %banner_content;
+  background: url('src/assets/images/index-bg.png') no-repeat center center / cover;
+  .section_title {
+    margin-bottom: 48px;
+    color: $font_white;
+  }
+}
+.b3_cards {
+  display: flex;
+  @include b992 {
+    flex-wrap: wrap;
+  }
+}
+.b3_card {
+  h3 {
+    padding: 8px;
+    background-color: $font_white;
+    color: $primary;
+    font-size: 48px;
+    text-align: center;
+    font-weight: 900;
+  }
+  @include b992 {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+}
+.b3_card_img {
+  @include b768 {
+    display: none;
+  }
+}
+
+.b3_card_img_sm {
+  display: none;
+
+  @include b768 {
+    display: block;
+  }
+}
+
+//recommend
+.recommend {
+  @extend %banner_content;
+  .section_title {
+    margin-bottom: 48px;
+  }
+}
+.re_cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  @include b992 {
+    flex-wrap: wrap;
+  }
+}
+
+.re_card {
+  @include b992 {
+    width: calc((100% - 24px)/2);
+  }
+  @include b768 {
+    width: 100%;
+    & img {
+      width: 100%;
+    }
+  }
+}
+.card_body {
+  height: 205px;
+  box-shadow: 0px 2px 6px #00000029;
+  border: 1px solid #DEE2E6;
+  border-radius: 4px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  .name {
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+  .message {
+    flex-grow: 1;
+  }
+  .date {
+    font-size: 14px;
+    color: $gray;
+  }
+}
+
+//contact
+.contact {
+  @extend %banner_content;
+  background-color: $bg_light;
+  padding-left: 12px;
+  padding-right: 12px;
+  .section_title {
+    margin-bottom: 48px;
+  }
+  @include b768 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.form_content {
+  margin: 0 auto;
+  & label,
+  & input,
+  & textarea {
+    display: block;
+    width: 100%;
+    cursor: pointer;
+  }  
+  & label {
+    margin-bottom: 8px;
+  }
+  & input {
+    height: 36px;
+    padding: 4px 8px;
+    background-color: $bg_light;
+    border: 1px solid #707070;
+  }
+
+  & textarea {
+    resize: none;
+    height: 136px;
+    padding: 4px 8px;
+    background-color: $bg_light;
+    border: 1px solid #707070;
+  }
+}
+.input_box {
+  margin-bottom: 16px;
+}
+.checkbox {
+  display: flex;
+  align-items: center;
+  & label {
+    margin: 0;
+  }
+  & input[type=checkbox] {
+    margin: 0;
+    width: 24px;
+    height: 24px;
+    margin-right: 4px;
+    border: 5px solid red;
+    user-select: none;/* 防止文字被滑鼠選取反白 */
+  }
+}
+.form_submit {
+  @include primary_btn;
+  display: block;
+  margin: 0 auto;
+  margin-top: 48px;
+  border: 0px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  @include b768 {
+    margin-top: 24px;
+  }
+}

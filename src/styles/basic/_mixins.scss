@@ -1,0 +1,6 @@
+@mixin primary_btn {
+  background-color: $primary;
+  padding: 6px 12px;
+  color: $font_white;
+  cursor: pointer;
+}

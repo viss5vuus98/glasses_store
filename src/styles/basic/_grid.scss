@@ -1,23 +1,17 @@
-@mixin b1200 {
-  @media screen and (max-width: 1200px) {
-    @content;
-  }
-}
-
 @mixin b992 {
   @media screen and (max-width: 992px) {
     @content;
   }
 }
 
-@mixin b767 {
-  @media screen and (max-width: 767px) {
+@mixin b768 {
+  @media (max-width: 768px) {
     @content;
   }
 }
 
-@mixin b320 {
-  @media screen and (max-width: 320px) {
+@mixin b375 {
+  @media (max-width: 375px) {
     @content;
   }
 }

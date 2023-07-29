@@ -1,8 +1,14 @@
-@import './basic/_reset.scss';
-@import './basic/_common.scss';
+//Configurations
+@import './basic/variable';
+@import './basic/reset';
+@import './basic/grid.scss';
+@import './basic/typography';
+@import './basic/common';
+@import './basic/mixins';
 
-//layout
-@import './layout/navbar.scss';
+//Layout
+@import './layout/navbar';
+@import './layout/footer';
 
-//pages
-@import './home_1.scss';
+//Pages
+@import './pages/home';
