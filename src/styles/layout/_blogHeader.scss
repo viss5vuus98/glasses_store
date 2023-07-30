@@ -1,0 +1,23 @@
+.blog_header {
+  background-color: #650300;
+  color: $font_white;
+  @include b992 {
+    padding: 0 24px;
+  }
+  @include b768 {
+    display: none;
+  }
+}
+.bl_navbar {
+  padding: 13px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bl_items {
+  display: flex;
+  gap: 48px;
+  font-size: 20px;
+  font-weight: 700;
+}

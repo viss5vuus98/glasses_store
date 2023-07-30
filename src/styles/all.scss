@@ -9,6 +9,10 @@
 //Layout
 @import './layout/navbar';
 @import './layout/footer';
+@import './layout/pagination';
+@import './layout/blogHeader';
 
 //Pages
 @import './pages/index';
+@import './pages/blogHome';
+@import './pages/blogPages';

@@ -1,0 +1,37 @@
+.pagination {
+  max-width: 396px;
+  margin: 124px auto;
+  margin-bottom: 80px;
+  padding: 0 12px;
+  display: flex;
+  text-align: center;
+  @include b992 {
+    max-width: 374px;
+    margin-top: 80px;
+  }
+  @include b768 {
+    margin: 64px auto;
+    font-size: 16px;
+  }
+}
+
+.pagination_control {
+  padding: 11px 12px;
+  flex: 1 0 22%;
+  border: 1px solid #555555;
+  &:last-child {
+      border-left: 0;
+  }
+}
+.pagination_list {
+  padding: 12px 16px;
+  flex-grow: 1;
+  border: 1px solid #555555;
+  border-left: 0;
+}
+
+.pagination_control:hover,
+.pagination_list:hover {
+  background-color: $font_dark;
+  color: $font_white;
+}

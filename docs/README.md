@@ -27,6 +27,7 @@ npm run dev
 
 ```
 |-pages  頁面Html
+  |-layout
 |-public 
   |-assets 靜態檔案, Image
 |-src

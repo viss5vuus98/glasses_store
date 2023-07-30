@@ -13,23 +13,8 @@
     />
   </head>
   <body>
-    <nav class="navbar">
-      <div class="container">
-        <div class="nav">
-          <img
-            class="logo"
-            src="/assets/images/logo-white.png"
-            alt="Logo"
-          />
-          <ul class="nav_items fs-4">
-            <li><a href="">系列鏡框</a></li>
-            <li><a href="">門市據點</a></li>
-            <li><a href="">部落格</a></li>
-            <li><a href="">常見問題</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <%- include('./pages/layouts/navbar.html'); -%>
+
     <header>
       <div class="container">
         <div class="row">
@@ -207,43 +192,8 @@
           </form>
       </div>
     </section>
-    <footer>
-      <div class="container">
-        <div class="footer_content">
-          <div class="footer_links">
-            <ul class="page_links">
-              <li class="page_link"><a href="">首頁</a></li>
-              <li class="page_link"><a href="">系列鏡框</a></li>
-              <li class="page_link"><a href="">門市據點</a></li>
-              <li class="page_link"><a href="">部落格</a></li>
-              <li class="page_link"><a href="">常見問題</a></li>
-            </ul>
-            <ul class="social_media">
-              <li class="s_link"><a href=""><img src="/assets/images/ic-social-fb.png" alt=""></a></li>
-              <li class="s_link"><a href=""><img src="/assets/images/ic-social-ig.png" alt=""></a></li>
-              <li class="s_link"><a href=""><img src="/assets/images/ic-social-line.png"></img></a></li>
-            </ul>
-          </div>
-          <div class="footer_info">
-            <div class="f_content">
-              <img src="" alt="">
-              <p>0800-000-00</p>
-            </div>
-            <div class="f_content">
-              <img src="" alt="">
-              <p>glasses@business.com</p>
-            </div>
-          </div>
-        </div>
-        <div class="copy">
-          <p>Copyright © 2020 Glasses.All rights reserved.</p>
-          <ul class="c_info">
-            <li><a href="">隱私權政策</a></li>
-            <li><a href="">服務條款</a></li>
-          </ul>
-        </div>
-      </div>
-    </footer>
+    
+    <%- include('./pages/layouts/footer.html'); -%>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

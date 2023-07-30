@@ -2,6 +2,8 @@ import { defineConfig } from 'vite'
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 import { glob } from 'glob'
+import { ViteEjsPlugin } from 'vite-plugin-ejs';
+import liveReload from 'vite-plugin-live-reload';
 
 function moveOutputPlugin() {
   return {
@@ -19,7 +21,6 @@ function moveOutputPlugin() {
   };
 }
 
-
 export default defineConfig({
   base: '/glasses_store/', //設置Git Pages的根目錄
   //assetsDir: '/assets/images', //設置靜態資源目錄
@@ -28,8 +29,11 @@ export default defineConfig({
   //         '/images': 'src/assets/images',
   //       },
   //   },
+  // 設定插件
   plugins: [
-    moveOutputPlugin(),
+    ViteEjsPlugin(), //使用ejs模板
+    liveReload('pages/**/*.ejs','pages/**/*.html'), //使用liveReload
+    moveOutputPlugin(), //自定義插件 - 調整輸出後路徑
   ],
 
   // 設定伺服器選項
@@ -45,8 +49,8 @@ export default defineConfig({
         glob
           .sync('pages/**/*.html')
           .map((file) => [
-            path.relative('pages', file.slice(0, -5)),
-            path.resolve(__dirname, file),
+            path.relative('pages', file.slice(0, file.length - path.extname(file).length)),
+            fileURLToPath(new URL(file, import.meta.url)),
           ])
       ),
     },

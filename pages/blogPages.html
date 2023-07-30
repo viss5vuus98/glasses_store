@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Pages</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+      rel="stylesheet">    
+  </head>
+  <body>
+    <%- include('./pages/layouts/navbar.html'); -%>
+    <div class="blog_header header_enable">
+      <div class="container">
+        <div class="bl_navbar">
+          <ul class="bl_items">
+            <li>最新消息</li>
+            <li>特別企劃</li>
+            <li>新品上市</li>
+            <li>鏡框小知識</li>
+          </ul>
+          <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+        </div>
+      </div>
+    </div>
+    <section class="blog_page">
+      <div class="container">
+        <div class="row">
+          <div class="bp_main_content col-xl-8 col-lg-9 col-md-4">
+            <div>
+              <span class="path">首頁 / 部落格 / 特別企劃 /</span>
+              <span class="current_path">情人特別企劃</span>
+            </div>
+            <div class="current_tag"><p>#special</p><p>#event</p></div>
+            <h1 class="fs-xl-7 fs-md-4">情人特別企劃</h1>
+            <h2 class="fs-xl-4 fs-md-1">2020 Valentine’s Special</h2>
+            <div class="bp_wrapper">
+              <img src="/public/assets/images/blogpage-1.png" alt="Model" />
+              <p>
+                一年一度西洋情人節即將到來，我們推出最強「情人節企劃」，為這個甜蜜的節日加溫。
+                本次拍攝的鏡框款式與 NEEDS CLASSIC
+                聯名設計款，偶爾跟另一半來個低調情侶單品，結合彼此喜好、找出合適框型款式，在這個春夏輕鬆搭出屬於你們的甜蜜默契！
+              </p>
+            </div>
+            <div class="bp_wrapper">
+              <img src="/public/assets/images/blogpage-2.png" alt="Glasses" />
+              <p>
+                一年一度西洋情人節即將到來，我們推出最強「情人節企劃」，為這個甜蜜的節日加溫。
+                本次拍攝的鏡框款式與 NEEDS CLASSIC
+                聯名設計款，偶爾跟另一半來個低調情侶單品，結合彼此喜好、找出合適框型款式，在這個春夏輕鬆搭出屬於你們的甜蜜默契！
+              </p>
+            </div>
+            <div class="bp_wrapper">
+              <img src="/public/assets/images/blogpage-3.png" alt="Glasses" />
+              <p>
+                一年一度西洋情人節即將到來，我們推出最強「情人節企劃」，為這個甜蜜的節日加溫。
+                本次拍攝的鏡框款式與 NEEDS CLASSIC
+                聯名設計款，偶爾跟另一半來個低調情侶單品，結合彼此喜好、找出合適框型款式，在這個春夏輕鬆搭出屬於你們的甜蜜默契！
+              </p>
+            </div>
+            <div class="bp_wrapper">
+              <img src="/public/assets/images/blogpage-4.png" alt="Model" />
+              <p>
+                2/14(五)-2/20(日) 至本店單筆消費滿2980元,
+                就送情人節限定眼鏡盒1個 期間優惠還有~~持他牌鏡框更換鏡片
+                薄型非球面鏡片折300元 濾藍光鏡片折500元 快快帶上另一半
+                讓彼此每一次睜開眼，都被愛的視線包圍!
+              </p>
+            </div>
+            <div class="bp_footer">
+              <p>Share</p>
+              <img src="/public/assets/images/logo-facebook.png" alt="" class="bp_facebook" />
+              <img src="/public/assets/images/logo-instagram.png" alt="" class="bp_instagram" />
+            </div>
+            <div class="bp_control">
+              <a href="" class="previous"><i class="fa-solid fa-arrow-left"></i> 上一篇：街頭潮人訪問 1</a>
+              <a href="" class="next">下一篇：街頭潮人訪問 2 <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="bp_sidebar col-xl-4 col-lg-3">
+            <div class="tag">
+              <p class="material-icons-outlined tag_icon fs-xl-5 fs-lg-1">label</p>
+              <h3 class="fs-xl-5 fs-lg-1">TAGS</h3>
+            </div>
+            <ol class="tag_list">
+              <li class="tag_item fs-xl-4 fs-lg-1">
+                <p>#special</p>
+                <p>#sale</p>
+              </li>
+              <li class="tag_item fs-xl-4 fs-lg-1">
+                <p>#new_item</p>
+                <p>#interview</p>
+              </li>
+              <li class="tag_item fs-xl-4 fs-lg-1">
+                <p>#trivia</p>
+                <p>#news</p>
+              </li>
+              <li class="tag_item fs-xl-4 fs-lg-1">
+                <p>#event</p>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+    <%- include('./pages/layouts/footer.html'); -%>
+    <script
+      src="https://kit.fontawesome.com/49896da301.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
