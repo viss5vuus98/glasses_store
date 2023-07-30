@@ -1,4 +1,7 @@
-# Vite SCSS 環境
+# Glasses_store
+
+# github page
+https://viss5vuus98.github.io/glasses_store/
 
 ## 專案設置
 
@@ -9,7 +12,7 @@
 ####  在本機啟動專案
 ```
 # clone 本專案 
-git clone https://github.com/viss5vuus98/Personal_Page.git
+git clone https://github.com/viss5vuus98/glasses_store.git
 
 # 至專案資料夾 輸入
 npm i
@@ -17,15 +20,15 @@ npm i
 # 啟動local server
 npm run dev
 
-# server run on http://127.0.0.1:3000/Personal_Page/
+# server run on http://127.0.0.1:3000/glasses_store/
 
 ```
 ## 專案架構
 
 ```
-|-src
+|-pages  頁面Html
+|-public 
   |-assets 靜態檔案, Image
+|-src
   |-styles .scss檔案
-  |-pages  頁面Html
-|-index.html 頁面html
 ```
