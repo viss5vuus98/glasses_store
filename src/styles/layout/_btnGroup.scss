@@ -1,0 +1,32 @@
+.button_group {
+  @include b992 {
+
+  }
+}
+.button_group_container {
+  margin: 0 -12px;
+  display: flex;
+  li {
+    flex-grow: 1;
+  }
+  a {
+    display: block;
+    border-right: 1px solid #dcdcdc;
+    padding: 24px;
+    text-align: center;
+    font-weight: 600;
+  }
+  .first {
+    border-left: 1px solid #dcdcdc;
+  }
+  @include b992 {
+    a {
+      padding: 16px 50px;
+    }
+  }
+  @include b768 {
+    a {
+      padding: 16px 13px;
+    }
+  }
+}
