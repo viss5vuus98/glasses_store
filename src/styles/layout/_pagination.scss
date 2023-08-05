@@ -5,6 +5,7 @@
   padding: 0 12px;
   display: flex;
   text-align: center;
+  cursor: pointer;
   @include b992 {
     max-width: 374px;
     margin-top: 80px;

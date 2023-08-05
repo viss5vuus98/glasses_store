@@ -87,3 +87,13 @@ footer{
     align-items: start;
   }
 }
+
+.f_content {
+  display: flex;
+  align-items: center;
+}
+
+.phone_icon,
+.mail_icon {
+  margin-right: 24px;
+}

@@ -1,17 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Glasses</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Roboto&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+    <%- include('./pages/layouts/head.html'); -%>
   <body>
     <%- include('./pages/layouts/navbar.html'); -%>
 
@@ -21,7 +8,7 @@
           <div class="h_title_content col-xl-8 col-lg-11 col-md-4">
             <p class="fs-xl-6 fs-md-1">Promise-Desert 2020 早春系列</p>
             <h1 class="page_title fs-xl-8 fs-md-4">看得清，才能看得遠</h1>
-            <div class="h_link"><a class="fs-xl-3" href="">立即購買</a></div>
+            <div class="h_link"><a class="fs-xl-3" href="#">立即購買</a></div>
           </div>
         </div>
       </div>
@@ -30,8 +17,8 @@
       <div class="container">
         <div class="row">
           <h2 class="section_title col-xl-8 col-lg-10 col-md-4 fs-xl-7 fs-md-4">用專業的心，做專業的事</h2>
-          <div class="b_cards col-xl-12">
-            <div class="b_card">
+          <ul class="b_cards col-xl-12">
+            <li class="b_card">
               <div class="img_content"></div>
               <img
                 src="/assets/images/home-section2-1.png"
@@ -42,8 +29,8 @@
               <p class="card_text">
                 無論任何度數皆不需追加費用即可擁有適合自己的薄型球面鏡片。
               </p>
-            </div>
-            <div class="b_card">
+            </li>
+            <li class="b_card">
               <img
                 src="/assets/images/home-section2-2.png"
                 alt="Time"
@@ -54,8 +41,8 @@
                 為了您的寶貴時間著想，以豐富專業知識與技術將結帳到交件的時間縮減至最快
                 20 分鐘即可完成。
               </p>
-            </div>
-            <div class="b_card">
+            </li>
+            <li class="b_card">
               <img
                 src="/assets/images/home-section2-3.png"
                 alt="Care"
@@ -66,8 +53,8 @@
                 我們提供長達 120
                 天的保固售後服務，不限會員資格皆享有免費深層保養及專業維修服務。
               </p>
-            </div>
-            <div class="b_card">
+            </li>
+            <li class="b_card">
               <img
                 src="/assets/images/home-sectioin2-4.png"
                 alt="Glasses"
@@ -77,8 +64,8 @@
               <p class="card_text">
                 使用世界知名頂級品牌，抗UV、防汙鍍膜薄型非球面鏡片。
               </p>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
@@ -88,15 +75,15 @@
           <h2 class="section_title col-xl-8 col-lg-10 col-md-4 fs-xl-7 fs-md-4">經典系列鏡框</h2>
           <div class="b2_cards col-xl-12 col-lg-6 col-md-4">
             <div class="b2_card">
-              <img src="/assets/images/home-section3-1.png" alt="" />
+              <img src="/assets/images/home-section3-1.png" alt="OPTICAL" />
               <h3 class="b_title">OPTICAL</h3>
             </div>
             <div class="b2_card">
-              <img src="/assets/images/home-section3-2.png" alt="" />
+              <img src="/assets/images/home-section3-2.png" alt="SUNGLASSES" />
               <h3 class="b_title">SUNGLASSES</h3>
             </div>
             <div class="b2_card">
-              <img src="/assets/images/home-section3-3.png" alt="" />
+              <img src="/assets/images/home-section3-3.png" alt="FUNCTIONAL" />
               <h3 class="b_title">FUNCTIONAL</h3>
             </div>
           </div>
@@ -109,13 +96,13 @@
           <h2 class="section_title col-xl-8 col-lg-10 col-md-4 fs-xl-7 fs-md-4">聯名設計鏡框</h2>
           <div class="b3_cards col-xl-12">
             <div class="b3_card">
-              <img src="/assets/images/home-section4-1.png" alt="" class="b3_card_img">
-              <img src="/assets/images/home-section4-1-sm.png" alt="" class="b3_card_img_sm">            
+              <img src="/assets/images/home-section4-1.png" alt="Model" class="b3_card_img">
+              <img src="/assets/images/home-section4-1-sm.png" alt="Model" class="b3_card_img_sm">            
               <h3 class="b_title">DOUBLE A+</h3>
             </div>
             <div class="b3_card">
-              <img src="/assets/images/home-section4-2.png" alt="" class="b3_card_img">
-              <img src="/assets/images/home-section4-2-sm.png" alt="" class="b3_card_img_sm">     
+              <img src="/assets/images/home-section4-2.png" alt="Model" class="b3_card_img">
+              <img src="/assets/images/home-section4-2-sm.png" alt="Model" class="b3_card_img_sm">     
               <h3 class="b_title">YOUTH</h3>
             </div>
           </div>
@@ -127,7 +114,7 @@
         <h2 class="section_title">顧客推薦</h2>
         <div class="re_cards">
           <div class="re_card">
-            <img src="/assets/images/home-section5-1.png" alt="" />
+            <img src="/assets/images/home-section5-1.png" alt="Customer" />
             <div class="card_body">
               <p class="name">Jessy</p>
               <p class="message">眼鏡品質優良，下次還會想來這邊購買！</p>
@@ -135,7 +122,7 @@
             </div>
           </div>
           <div class="re_card">
-            <img src="/assets/images/home-section5-2.png" alt="" />
+            <img src="/assets/images/home-section5-2.png" alt="Customer" />
             <div class="card_body">
               <p class="name">凱倫</p>
               <p class="message">
@@ -145,7 +132,7 @@
             </div>
           </div>
           <div class="re_card">
-            <img src="/assets/images/home-section5-3.png" alt="" />
+            <img src="/assets/images/home-section5-3.png" alt="Customer" />
             <div class="card_body">
               <p class="name">悠悠</p>
               <p class="message">
@@ -155,7 +142,7 @@
             </div>
           </div>
           <div class="re_card">
-            <img src="/assets/images/home-section5-4.png" alt="" />
+            <img src="/assets/images/home-section5-4.png" alt="Customer" />
             <div class="card_body">
               <p class="name">Kyuan</p>
               <p class="message">服務很好，品質沒有任何問題，非常喜歡。</p>
@@ -171,19 +158,19 @@
           <form action="">
             <div class="input_box">
               <label for="name">姓名</label>
-              <input name="name" type="text" />
+              <input id="name" type="text" />
             </div>
             <div class="input_box">
               <label for="phone">聯絡電話</label>
-              <input name="phone" type="number" />
+              <input id="phone" type="tel" />
             </div>
             <div class="input_box">
               <label for="email">電子郵件</label>
-              <input name="email" type="email" />
+              <input id="email" type="email" />
             </div>
             <div class="input_box">
               <label for="feedback">意見反饋</label>
-              <textarea name="feedback" cols="30" rows="10"></textarea>
+              <textarea id="feedback" cols="30" rows="10"></textarea>
             </div>
             <div class="input_content checkbox">
               <input type="checkbox"/><label for="">我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</label>

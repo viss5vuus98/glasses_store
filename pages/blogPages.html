@@ -1,18 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blog Pages</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Roboto&display=swap"
-      rel="stylesheet"
-    />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
-      rel="stylesheet">    
-  </head>
+    <%- include('./pages/layouts/head.html'); -%>
   <body>
     <%- include('./pages/layouts/navbar.html'); -%>
     <div class="blog_header header_enable">
@@ -33,10 +19,12 @@
         <div class="row">
           <div class="bp_main_content col-xl-8 col-lg-9 col-md-4">
             <div>
-              <span class="path">首頁 / 部落格 / 特別企劃 /</span>
+              <a href="#">首頁 / </a>
+              <a href="#">部落格 / </a>
+              <a href="#">特別企劃 /</a>
               <span class="current_path">情人特別企劃</span>
             </div>
-            <div class="current_tag"><p>#special</p><p>#event</p></div>
+            <div class="current_tag"><a href="#">#special</a><a href="#">#event</a></div>
             <h1 class="fs-xl-7 fs-md-4">情人特別企劃</h1>
             <h2 class="fs-xl-4 fs-md-1">2020 Valentine’s Special</h2>
             <div class="bp_wrapper">
@@ -78,8 +66,8 @@
               <img src="/public/assets/images/logo-instagram.png" alt="" class="bp_instagram" />
             </div>
             <div class="bp_control">
-              <a href="" class="previous"><i class="fa-solid fa-arrow-left"></i> 上一篇：街頭潮人訪問 1</a>
-              <a href="" class="next">下一篇：街頭潮人訪問 2 <i class="fa-solid fa-arrow-right"></i></a>
+              <a href="#" class="previous"><i class="fa-solid fa-arrow-left"></i> 上一篇：街頭潮人訪問 1</a>
+              <a href="#" class="next">下一篇：街頭潮人訪問 2 <i class="fa-solid fa-arrow-right"></i></a>
             </div>
           </div>
           <div class="bp_sidebar col-xl-4 col-lg-3">
@@ -89,19 +77,19 @@
             </div>
             <ol class="tag_list">
               <li class="tag_item fs-xl-4 fs-lg-1">
-                <p>#special</p>
-                <p>#sale</p>
+                <a href="#">#special</a>
+                <a href="#">#sale</a>
               </li>
               <li class="tag_item fs-xl-4 fs-lg-1">
-                <p>#new_item</p>
-                <p>#interview</p>
+                <a href="#">#new_item</a>
+                <a href="#">#interview</a>
               </li>
               <li class="tag_item fs-xl-4 fs-lg-1">
-                <p>#trivia</p>
-                <p>#news</p>
+                <a href="#">#trivia</a>
+                <a href="#">#news</a>
               </li>
               <li class="tag_item fs-xl-4 fs-lg-1">
-                <p>#event</p>
+                <a href="#">#event</a>
               </li>
             </ol>
           </div>
